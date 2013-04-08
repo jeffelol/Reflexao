@@ -1,6 +1,7 @@
 package br.edu.unisep.jeferson;
 
 import java.lang.reflect.Method;
+import java.util.Scanner;
 
 public class App {
 
@@ -12,11 +13,14 @@ public class App {
             System.out.println("2 - Subtração");
             System.out.println("3 - Divisão");
             System.out.println("4 - Multiplicação");
+            
             Method[] metodos = operacao.getMethods();
             
-            for(Method mts : metodos){
+            Scanner sc = new Scanner(System.in);
 
-            }
+            Method mt = metodos[sc.nextInt()];
+
+            
             
         } catch (ClassNotFoundException ex) {
         
